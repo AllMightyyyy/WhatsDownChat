@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="208bfe5f-ebff-425c-bb09-ccf33036af75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/electron/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/electron.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FeedbackForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PrivateRoute.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PublicRoute.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UserSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/AuthContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ChatList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ChatRoom.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Roles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/socket.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/slices/authSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/attachment.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/auth.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/chat.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/message.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/roles.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/user.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/userSearch.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/tokenService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2oQKuJCGjZvLUWyYDlpkmXeC8V9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ALLMIGHTY/Desktop/WhatsDown/WhatsDownBackend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.idesettings.emmet",
+    "ts.external.directory.path": "C:\\Users\\ALLMIGHTY\\Desktop\\WhatsDown\\whatsdownfrontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ALLMIGHTY\Desktop\WhatsDown\whatsdownfrontend\src\components" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="208bfe5f-ebff-425c-bb09-ccf33036af75" name="Changes" comment="" />
+      <created>1730796591289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730796591289</updated>
+      <workItem from="1730796593830" duration="13381000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
