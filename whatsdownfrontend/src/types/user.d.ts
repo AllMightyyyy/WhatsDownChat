@@ -10,3 +10,4 @@ export interface UpdateUserRequest {
     email?: string;
     avatar?: File;
 }
+

@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import { Chat } from '../types/chat';
 import { Link } from 'react-router-dom';
@@ -13,7 +14,7 @@ const ChatList: React.FC<ChatListProps> = ({ chats }) => {
                 <li key={chat.id}>
                     <Link to={`/chat/${chat.id}`}>
                         {chat.isGroup ? chat.name : chat.members.map(m => m.username).join(', ')}
-                        {chat.latestMessage && <p>{chat.latestMessage}</p>}
+                        {chat.latestMessage && <p>{chat.latestMessage.content}</p>}
                     </Link>
                 </li>
             ))}
@@ -22,3 +23,6 @@ const ChatList: React.FC<ChatListProps> = ({ chats }) => {
 };
 
 export default ChatList;
+
+ */
+export {};

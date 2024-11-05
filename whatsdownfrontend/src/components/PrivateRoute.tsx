@@ -1,20 +1,29 @@
-import React, { useContext } from 'react';
+// src/components/PrivateRoute.tsx
+import React, { useEffect } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 interface PrivateRouteProps {
     children: JSX.Element;
 }
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
-    const { auth } = useContext(AuthContext);
+    const { user, loading } = useAuth();
     const location = useLocation();
 
-    if (auth.isAuthenticated) {
-        return children;
-    } else {
-        return <Navigate to="/login" state={{ from: location }} replace />;
+    useEffect(() => {
+        if (!loading && !user) {
+            console.log("User is not logged in, redirecting to login.");
+        }
+    }, [loading, user]);
+
+    if (loading) {
+        return <div>Loading...</div>;
     }
+
+    console.log("USEEEEEEEEER : ", user);
+
+    return user ? children : <Navigate to="/login" replace state={{ from: location }} />;
 };
 
 export default PrivateRoute;

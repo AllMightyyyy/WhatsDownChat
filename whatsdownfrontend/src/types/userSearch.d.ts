@@ -1,3 +1,4 @@
+// src/types/userSearch.ts
 export interface UserSearchResult {
     id: string;
     username: string;

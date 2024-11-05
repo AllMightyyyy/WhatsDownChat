@@ -5,37 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208bfe5f-ebff-425c-bb09-ccf33036af75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/electron/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/electron.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FeedbackForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PrivateRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PublicRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/AuthContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ChatList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ChatRoom.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Register.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Roles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/socket.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/authSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/attachment.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/auth.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/chat.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/message.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/roles.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/user.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/userSearch.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/tokenService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatWindow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MessageBubble.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewChatModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhatsDownBackend/src/main/java/org/example/whatsdownbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WhatsDownBackend/src/main/java/org/example/whatsdownbackend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhatsDownBackend/src/main/java/org/example/whatsdownbackend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WhatsDownBackend/src/main/java/org/example/whatsdownbackend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhatsDownBackend/src/main/java/org/example/whatsdownbackend/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WhatsDownBackend/src/main/java/org/example/whatsdownbackend/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PublicRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PublicRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserSearch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/AuthContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/AuthContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ChatList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ChatList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ChatRoom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ChatRoom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Roles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Roles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/socket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/socket.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/auth.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/auth.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/chat.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/chat.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/message.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/message.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/roles.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/roles.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/user.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/user.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/userSearch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/userSearch.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +58,27 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AllMightyyyy"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AllMightyyyy/WhatsDownChat.git",
+    "accountId": "47255bbb-e801-4ba8-9666-91cd6acf355f"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2oQKuJCGjZvLUWyYDlpkmXeC8V9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,16 +87,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ALLMIGHTY/Desktop/WhatsDown/WhatsDownBackend",
+    "last_opened_file_path": "C:/Users/zakar/OneDrive/Bureau/Projects/WhatsDownChat/whatsdownfrontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.idesettings.emmet",
-    "ts.external.directory.path": "C:\\Users\\ALLMIGHTY\\Desktop\\WhatsDown\\whatsdownfrontend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\zakar\\OneDrive\\Bureau\\Projects\\WhatsDownChat\\whatsdownfrontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -103,10 +122,23 @@
       <option name="presentableId" value="Default" />
       <updated>1730796591289</updated>
       <workItem from="1730796593830" duration="13381000" />
+      <workItem from="1730832510418" duration="15381000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/PrivateRoute.tsx</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

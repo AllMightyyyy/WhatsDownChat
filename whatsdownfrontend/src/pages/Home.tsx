@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+// src/pages/Home.tsx
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
+import { Box, Typography, Button } from '@mui/material';
 
 const Home: React.FC = () => {
-    const { auth, logout } = useContext(AuthContext);
+    const { user, logout } = useAuth();
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -11,28 +13,44 @@ const Home: React.FC = () => {
         navigate('/login');
     };
 
-    if (auth.isAuthenticated) {
+    if (user) {
         return (
-            <div>
-                <h1>Welcome Back!</h1>
-                <p>You are already logged in. Go to your dashboard to start chatting.</p>
-                <button onClick={() => navigate('/dashboard')}>Go to Dashboard</button>
-                <button onClick={handleLogout} style={{ marginLeft: '10px' }}>Logout</button>
-            </div>
+            <Box sx={{ p: 4, textAlign: 'center' }}>
+                <Typography variant="h3" gutterBottom>
+                    Welcome Back!
+                </Typography>
+                <Typography variant="h6" gutterBottom>
+                    You are already logged in. Go to your dashboard to start chatting.
+                </Typography>
+                <Box sx={{ mt: 2 }}>
+                    <Button variant="contained" color="primary" onClick={() => navigate('/dashboard')} sx={{ mr: 2 }}>
+                        Go to Dashboard
+                    </Button>
+                    <Button variant="outlined" color="secondary" onClick={handleLogout}>
+                        Logout
+                    </Button>
+                </Box>
+            </Box>
         );
     }
 
     return (
-        <div>
-            <h1>Welcome to the Chat App</h1>
-            <p>Connect with friends and family in real-time.</p>
-            <Link to="/login">
-                <button>Login</button>
-            </Link>
-            <Link to="/register">
-                <button>Sign Up</button>
-            </Link>
-        </div>
+        <Box sx={{ p: 4, textAlign: 'center' }}>
+            <Typography variant="h3" gutterBottom>
+                Welcome to the Chat App
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+                Connect with friends and family in real-time.
+            </Typography>
+            <Box sx={{ mt: 4 }}>
+                <Button variant="contained" color="primary" component={Link} to="/login" sx={{ mr: 2 }}>
+                    Login
+                </Button>
+                <Button variant="outlined" color="secondary" component={Link} to="/register">
+                    Sign Up
+                </Button>
+            </Box>
+        </Box>
     );
 };
 

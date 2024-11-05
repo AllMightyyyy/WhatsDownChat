@@ -7,6 +7,8 @@ export interface Message {
     senderId: number;
     senderUsername: string;
     attachment?: string | null;
+    fileName?: string;
+    fileType?: string;
 }
 
 export interface SendMessageRequest {

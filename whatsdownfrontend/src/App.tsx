@@ -1,14 +1,12 @@
+// src/App.tsx
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import PublicRoute from './components/PublicRoute';
+import MainLayout from './components/MainLayout';
 
 const Login = lazy(() => import('./pages/Login'));
 const Register = lazy(() => import('./pages/Register'));
-const Dashboard = lazy(() => import('./pages/Dashboard'));
-const Profile = lazy(() => import('./pages/Profile'));
-const Roles = lazy(() => import('./pages/Roles'));
-const ChatRoom = lazy(() => import('./pages/ChatRoom'));
 const Home = lazy(() => import('./pages/Home'));
 
 const App: React.FC = () => {
@@ -40,34 +38,10 @@ const App: React.FC = () => {
 
                     {/* Protected Routes */}
                     <Route
-                        path="/dashboard"
+                        path="/*"
                         element={
                             <PrivateRoute>
-                                <Dashboard />
-                            </PrivateRoute>
-                        }
-                    />
-                    <Route
-                        path="/profile"
-                        element={
-                            <PrivateRoute>
-                                <Profile />
-                            </PrivateRoute>
-                        }
-                    />
-                    <Route
-                        path="/roles"
-                        element={
-                            <PrivateRoute>
-                                <Roles />
-                            </PrivateRoute>
-                        }
-                    />
-                    <Route
-                        path="/chat/:chatId"
-                        element={
-                            <PrivateRoute>
-                                <ChatRoom />
+                                <MainLayout />
                             </PrivateRoute>
                         }
                     />

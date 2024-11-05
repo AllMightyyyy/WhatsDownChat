@@ -1,6 +1,13 @@
+// src/types/auth.ts
+import { User } from './user';
+
 export interface LoginResponse {
     token: string;
-    refreshToken: string;
+    type: string;
+    id: number;
+    username: string;
+    email: string;
+    roles: string[];
 }
 
 export interface RegisterRequest {

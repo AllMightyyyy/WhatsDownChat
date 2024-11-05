@@ -1,16 +1,17 @@
-import React, { useContext } from 'react';
+// src/components/PublicRoute.tsx
+import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { AuthContext } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 interface PublicRouteProps {
     children: JSX.Element;
 }
 
 const PublicRoute: React.FC<PublicRouteProps> = ({ children }) => {
-    const { auth } = useContext(AuthContext);
+    const { user } = useAuth();
 
-    if (auth.isAuthenticated) {
-        return <Navigate to="/dashboard" replace />;
+    if (user) {
+        return <Navigate to="/" replace />;
     }
 
     return children;

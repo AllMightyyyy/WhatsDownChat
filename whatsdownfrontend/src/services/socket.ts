@@ -1,18 +1,13 @@
 // src/services/socket.ts
-import { Client, IMessage } from '@stomp/stompjs';
+import { Client } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
 import { getToken } from '../utils/tokenService';
 
-const token = getToken() || '';
-
 const client = new Client({
-    // Omit brokerURL when using webSocketFactory
     connectHeaders: {
-        token: token,
+        token: getToken() || '', // Use "token" header to match backend expectation
     },
-    debug: (str) => {
-        console.log(str);
-    },
+    debug: (str) => console.log(str),
     reconnectDelay: 5000,
     heartbeatIncoming: 4000,
     heartbeatOutgoing: 4000,
@@ -28,7 +23,6 @@ client.onStompError = (frame) => {
     console.error('Additional details: ' + frame.body);
 };
 
-// Activate the STOMP client
 client.activate();
 
 export default client;

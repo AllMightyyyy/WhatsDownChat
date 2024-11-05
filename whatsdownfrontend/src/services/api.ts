@@ -6,12 +6,10 @@ const api = axios.create({
     baseURL: 'http://localhost:8081/api',
 });
 
-// Add a request interceptor
 api.interceptors.request.use(
     (config) => {
         const token = getToken();
 
-        // Skip Authorization header for unauthenticated routes
         const isAuthRoute = config.url?.includes('/auth/register') || config.url?.includes('/auth/login');
 
         if (token && !isAuthRoute) {
@@ -23,7 +21,6 @@ api.interceptors.request.use(
     (error) => Promise.reject(error)
 );
 
-// response interceptor for token refresh
 api.interceptors.response.use(
     (response) => response,
     async (error) => {

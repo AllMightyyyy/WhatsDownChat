@@ -26,4 +26,12 @@ public interface UserService {
     Optional<User> findByUsername(String username);
 
     List<UserProfileDto> getAllUsers();
+
+    /**
+     * Fetches the profile of the current user as UserProfileDto.
+     *
+     * @param username The username of the current user.
+     * @return UserProfileDto containing the user's profile information.
+     */
+    UserProfileDto getUserProfileByUsername(String username);
 }

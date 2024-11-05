@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Chat, ChatAPIResponse } from '../types/chat';
-import { User } from '../types/user';
+import React, { useEffect, useState } from 'react';
+import { Box, Typography, IconButton } from '@mui/material';
+import ChatList from './ChatList';
+import UserSearch from './UserSearch';
+import api from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
-import api from "../services/api";
-import { Box } from '@mui/material';
-import ChatList from '../components/ChatList';
-import FeedbackForm from '../components/FeedbackForm';
+import { Chat, ChatAPIResponse } from '../types/chat';
+import { FaPlus } from 'react-icons/fa';
+import NewChatModal from './NewChatModal';
+import { User } from '../types/user';
 
-const Dashboard: React.FC = () => {
-    const { user, token } = useAuth();
+const Sidebar: React.FC = () => {
+    const { token } = useAuth();
     const [chats, setChats] = useState<Chat[]>([]);
     const [isCreating, setIsCreating] = useState<boolean>(false);
     const [allUsers, setAllUsers] = useState<User[]>([]);
@@ -43,24 +45,39 @@ const Dashboard: React.FC = () => {
 
                 setChats(chatsWithMembers);
             } catch (error) {
-                console.error("Error fetching chats or users", error);
-                // Optionally, show a toast or message to user
+                console.error("Failed to fetch chats or users", error);
+                // show a toast or message to user
             }
         };
 
         fetchChatsAndUsers();
     }, [token]);
 
-    const handleCreateChat = async (newChat: Chat) => {
+    const handleNewChat = async () => {
+        setIsCreating(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsCreating(false);
+    };
+
+    const handleChatCreated = (newChat: Chat) => {
         setChats([newChat, ...chats]);
     };
 
     return (
-        <Box sx={{ display: 'flex', height: '100%', width: '100%' }}>
+        <Box sx={{ width: 300, borderRight: '1px solid #ddd', display: 'flex', flexDirection: 'column' }}>
+            <Box sx={{ p: 2, borderBottom: '1px solid #ddd', display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'secondary.main' }}>
+                <Typography variant="h6" sx={{ color: '#FFFFFF' }}>Chats</Typography>
+                <IconButton onClick={handleNewChat} sx={{ color: '#FFFFFF' }}>
+                    <FaPlus />
+                </IconButton>
+            </Box>
+            <UserSearch />
             <ChatList chats={chats} />
-            <FeedbackForm />
+            {isCreating && <NewChatModal open={isCreating} onClose={handleCloseModal} onChatCreated={handleChatCreated} />}
         </Box>
     );
 };
 
-export default Dashboard;
+export default Sidebar;

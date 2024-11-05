@@ -48,4 +48,29 @@ public class UserServiceImpl implements UserService {
                 user.getProvider()
         )).collect(Collectors.toList());
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public UserProfileDto getUserProfileByUsername(String username) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new NoSuchElementException("User not found."));
+        return mapToUserProfileDto(user);
+    }
+
+    /**
+     * Helper method to map User entity to UserProfileDto.
+     */
+    private UserProfileDto mapToUserProfileDto(User user) {
+        return new UserProfileDto(
+                user.getId(),
+                user.getUsername(),
+                user.getEmail(),
+                user.getAvatar(),
+                user.getStatus(),
+                user.getProvider()
+        );
+    }
+
 }
