@@ -67,6 +67,13 @@ WhatsDown is a feature-rich real-time chat application inspired by WhatsApp, des
 - **React Router** (Routing)
 - **ESLint & Prettier** (Code Quality)
 
+## App showcase 
+![image](https://github.com/user-attachments/assets/99def7ee-01c8-4f40-b1bb-728679a17121)
+![image](https://github.com/user-attachments/assets/de8f9623-15bb-45a2-b5ba-d81e8cb2f8c8)
+![image](https://github.com/user-attachments/assets/59c5f8be-3040-4ccb-ad7e-493b684e0ea9)
+![image](https://github.com/user-attachments/assets/3ea7ee9d-87b5-4ebd-ba7c-0b7d537b2fbd)
+![image](https://github.com/user-attachments/assets/f9c021a7-fd54-4b67-abf5-1e6e5f249cbf)
+
 ## Architecture
 
 WhatsDown follows a client-server architecture, where the backend handles data management, business logic, and security, while the frontend manages user interactions and displays information. Real-time communication is facilitated through WebSockets, ensuring instant message delivery and updates.
