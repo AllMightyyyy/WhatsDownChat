@@ -19,12 +19,12 @@ interface ChatListProps {
     chats: Chat[];
 }
 
-const ChatList: React.FC<ChatListProps> = ({ chats }) => {
+const ChatList: React.FC<ChatListProps> = React.memo(({ chats }) => {
     const location = useLocation();
     const currentChatId = parseInt(location.pathname.split('/').pop() || '0', 10);
 
     return (
-        <List sx={{ flex: 1, overflowY: 'auto', width: '100%', bgcolor: 'background.paper' }}>
+        <List sx={{flex: 1, overflowY: 'auto', width: '100%', bgcolor: 'background.paper'}}>
             {chats.map(chat => (
                 <React.Fragment key={chat.id}>
                     <ListItem
@@ -39,17 +39,17 @@ const ChatList: React.FC<ChatListProps> = ({ chats }) => {
                             },
                             textDecoration: 'none',
                             color: 'inherit',
-                            ...(chat.id === currentChatId && { selected: true })
+                            ...(chat.id === currentChatId && {selected: true})
                         }}
                     >
-                        <ChatItemContent chat={chat} />
+                        <ChatItemContent chat={chat}/>
                     </ListItem>
-                    <Divider component="li" />
+                    <Divider component="li"/>
                 </React.Fragment>
             ))}
         </List>
     );
-};
+});
 
 interface ChatItemContentProps {
     chat: Chat;

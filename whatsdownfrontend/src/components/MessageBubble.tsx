@@ -9,8 +9,6 @@ interface MessageBubbleProps {
 }
 
 const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isOwnMessage }) => {
-    // @ts-ignore
-    // @ts-ignore
     return (
         <Box
             sx={{
@@ -34,7 +32,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isOwnMessage }) 
                     boxShadow: 1,
                 }}
             >
-                <Typography variant="body1">{message.content}</Typography>
+                <Typography variant="body1" dangerouslySetInnerHTML={{ __html: message.content }} />
                 {message.attachment && (
                     <Box sx={{ mt: 1 }}>
                         {message.fileType?.startsWith('image/') && (
@@ -53,7 +51,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isOwnMessage }) 
                 </Typography>
             </Box>
             {isOwnMessage && (
-                <Typography variant="caption" sx={{ ml: 1, color: message.isRead ? 'primary.main' : 'text.secondary' }}>
+                <Typography variant="caption" sx={{ ml: 1, color: message.isRead ? 'secondary.main' : 'text.secondary' }}>
                     {message.isRead ? '✓✓' : '✓'}
                 </Typography>
             )}
